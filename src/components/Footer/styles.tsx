@@ -37,7 +37,8 @@ export const PaymentsOptions = styled("section", {
 });
 
 export const PaymentsImage = styled("img", {
-  display: "none",
+  width: 40,
+  height: 30,
 
   "@md": {
     height: 35,
