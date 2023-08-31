@@ -9,14 +9,16 @@ interface StaticBannerProps {
 export function StaticBanner({ URI, imgTitle }: StaticBannerProps) {
   return (
     <S.Container>
-      <Image
-        src={URI}
-        alt={imgTitle}
-        width={0}
-        height={0}
-        sizes="(max-width: 768px)50vw, (min-width: 769px)100vw"
-        style={{ width: "100%", height: "auto" }}
-      />
+      <S.ImageWrapper>
+        <Image
+          src={URI}
+          alt={imgTitle}
+          width={0}
+          height={0}
+          priority
+          style={{ width: "100%", height: "auto" }}
+        />
+      </S.ImageWrapper>
     </S.Container>
   );
 }
