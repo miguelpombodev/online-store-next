@@ -20,6 +20,7 @@ export const CategoryItem = styled("a", {
   "@md": {
     cursor: "pointer",
     marginRight: 50,
+    height: 40,
 
     "&:hover": {
       borderBottom: "1px solid $BLACK",
